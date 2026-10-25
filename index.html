@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11152f">
+  <meta name="description" content="A tiny moonlit birthday universe made with love.">
+  <title>A Little Universe for You ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sky-glow" aria-hidden="true"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="shooting-star" aria-hidden="true"></div>
+
+  <button class="music-toggle glass" id="musicToggle" aria-label="Turn background music on">
+    <span id="musicIcon">♫</span><span id="musicLabel">music off</span>
+  </button>
+  <audio id="bgMusic" loop preload="none">
+    <!-- Add your own royalty-free MP3 at assets/ocean-piano.mp3 -->
+    <source src="assets/ocean-piano.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="hero scene" id="home">
+      <div class="moon" id="moon" role="button" tabindex="0" aria-label="Tap the moon for a little message">
+        <span class="moon-crater crater-one"></span><span class="moon-crater crater-two"></span>
+      </div>
+      <div class="moon-reflection" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="tiny-heart">♡</span> a little midnight surprise <span class="tiny-heart">♡</span></div>
+        <h1>for my favorite person<br>in the whole universe<span class="pink"> ♡</span></h1>
+        <p class="hero-sub">someone special has a little surprise for you.</p>
+        <button class="primary-button" id="openSurprise">open your little surprise <span>♡</span></button>
+        <p class="scroll-note">made just for you · scroll slowly</p>
+      </div>
+      <div class="cat cat-envelope" id="envelopeCat" role="button" tabindex="0" aria-label="A cat with a birthday letter">
+        <div class="cat-ears"><i></i><i></i></div><div class="cat-face"><span class="cat-eye"></span><span class="cat-eye"></span><span class="cat-nose"></span><span class="cat-mouth"></span><span class="whiskers left"></span><span class="whiskers right"></span></div>
+        <div class="cat-body"></div><div class="cat-tail"></div>
+        <div class="mini-envelope">♡</div>
+        <span class="cat-tooltip">pspsps... hi, pretty girl!</span>
+      </div>
+      <div class="beach-line" aria-hidden="true"></div>
+      <div class="ocean" id="ocean" role="button" tabindex="0" aria-label="Tap the ocean to make a ripple">
+        <div class="wave wave-one"></div><div class="wave wave-two"></div><div class="wave wave-three"></div>
+        <div class="water-shimmer"></div>
+      </div>
+      <div class="sand"></div>
+      <div class="lantern lantern-left"><span></span></div><div class="lantern lantern-right"><span></span></div>
+      <div class="shell shell-one" role="button" tabindex="0" aria-label="Open a tiny birthday wish">✧</div>
+      <div class="shell shell-two" role="button" tabindex="0" aria-label="Open a tiny birthday wish">❀</div>
+      <div class="paw-trail" aria-hidden="true">·  ·  ·  ·</div>
+    </section>
+
+    <section class="birthday section-wrap" id="birthday">
+      <div class="section-kicker">chapter one · your special day</div>
+      <h2>today, the universe<br>celebrates <em>you.</em></h2>
+      <p class="section-intro">and i made this tiny place so you could feel a little extra loved.</p>
+      <div class="birthday-card glass">
+        <div class="cake-scene">
+          <div class="cake-sparkle sparkle-a">✦</div><div class="cake-sparkle sparkle-b">✧</div>
+          <div class="cake" id="cake" role="button" tabindex="0" aria-label="Tap the cake to blow out the candles">
+            <div class="candle candle-a"><i class="flame"></i></div><div class="candle candle-b"><i class="flame"></i></div><div class="candle candle-c"><i class="flame"></i></div>
+            <div class="cake-top"></div><div class="cake-middle"><span>♡</span><span>♡</span><span>♡</span></div><div class="cake-bottom"></div><div class="cake-plate"></div>
+          </div>
+          <div class="sleepy-cat" id="sleepyCat" role="button" tabindex="0" aria-label="Tap the sleepy kitten"><span class="sleepy-ear left"></span><span class="sleepy-ear right"></span><span class="sleepy-face">ᴗ ᴗ</span><span class="sleepy-tail"></span></div>
+          <p class="tap-hint">tap the cake to make a wish ✨</p>
+        </div>
+        <div class="birthday-letter">
+          <p class="handwritten">happy 21st birthday, pretty girl ♡</p>
+          <div class="message-copy">
+            <p>happy birthday to my favorite girl in the whole world ♡</p>
+            <p>today is all about you, and i hope this little corner of the internet makes you smile, even just a little.</p>
+            <p>you deserve all the softest things in life, all the happiness your heart can hold, and all the love this world could ever give you.</p>
+            <p>i wish i could be beside you right now, watching you smile, teasing you a little, and reminding you how special you are to me.</p>
+            <p>thank you for being you. for your little habits, your cute smiles, your silly moments, and all the little things that make you so wonderfully you.</p>
+            <p>i hope this new chapter brings you beautiful memories, peaceful days, unexpected happiness, and dreams that slowly come true.</p>
+            <p>and if life ever gets a little difficult, i hope you remember that you don't have to be perfect to be loved. you deserve love on your happiest days and your hardest ones, too.</p>
+            <p>i may not always know the perfect words to say, but i hope i can keep finding little ways to make you feel loved.</p>
+            <p>happy birthday, sayang. please keep smiling, keep being your adorable self, and never forget how precious you are to me.</p>
+            <p>with all my love, always. ♡</p>
+          </div>
+        </div>
+      </div>
+      <div class="floating-note">a little reminder: you are loved more than you know <span>♡</span></div>
+    </section>
+
+    <section class="love-letter-section section-wrap" id="letter">
+      <div class="section-kicker">chapter two · a tiny confession</div>
+      <h2>psst... there's one<br>more thing <em>for you.</em></h2>
+      <p class="section-intro">this is a little embarrassing, so please be nice to me hehe.</p>
+      <button class="letter-button" id="letterButton" aria-expanded="false">
+        <span class="letter-envelope"><span class="envelope-heart">♡</span><span class="envelope-flap"></span></span>
+        <span class="letter-button-label">open the little letter</span>
+      </button>
+      <article class="love-note" id="loveNote" hidden>
+        <div class="note-stamp">sealed with 1000 cat kisses 🐾</div>
+        <p>okay, this is a little embarrassing to say... but you really do mean a lot to me.</p>
+        <p>sometimes i don't know how to express everything i feel, and i might get shy when i try to say something sweet.</p>
+        <p>but i'm really happy that you're in my life.</p>
+        <p>i hope i can make you smile on days when you need it most, stay beside you when things get difficult, and celebrate every little happiness with you.</p>
+        <p>you deserve to be loved gently, sincerely, and consistently.</p>
+        <p>and honestly... if i could make one birthday wish for myself, it would probably be to see you happy for a very, very long time.</p>
+        <p>so yeah... happy birthday, pretty girl. i like you a little more than i know how to explain. ♡</p>
+        <div class="note-signature">— your slightly shy person ♡</div>
+        <div class="sign-cat" id="signCat" role="button" tabindex="0" aria-label="A cat with a secret message">🐱<span>you're my favorite human.<br>don't tell the other cats.</span></div>
+      </article>
+      <button class="hug-button" id="hugButton">send her a little hug ♡</button>
+      <p class="hug-caption" id="hugCaption" aria-live="polite"></p>
+    </section>
+
+    <section class="wish-section scene" id="wish">
+      <div class="wish-moon" aria-hidden="true"></div>
+      <div class="wish-water"><div class="wave wave-one"></div><div class="wave wave-two"></div></div>
+      <div class="wish-content">
+        <div class="section-kicker">chapter three · one last little wish</div>
+        <h2>under the same<br>quiet <em>stars.</em></h2>
+        <div class="wish-card glass">
+          <p>i hope this year is gentle with you.</p>
+          <p>i hope you find reasons to smile even on ordinary days.</p>
+          <p>i hope your dreams find their way to you.</p>
+          <p>and i hope that, whenever you look at the night sky, you remember that somewhere, someone is wishing you all the happiness in the world.</p>
+          <p class="wish-ending">happy birthday, my pretty girl. ♡</p>
+        </div>
+        <div class="two-cats" aria-label="Two cats watching the stars"><span>🐈</span><span>🐈‍⬛</span></div>
+        <p class="made-with">made with a little bit of love, a lot of shyness,<br>and approximately 1000 cat kisses. 🐾</p>
+        <button class="final-heart" id="finalHeart" aria-label="Reveal one final secret">♡</button>
+        <p class="final-line" id="finalLine">you'll always be someone worth celebrating. ♡</p>
+        <p class="tiny-footer">for you, today and on all the ordinary days, too.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="hearts-layer" id="heartsLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
